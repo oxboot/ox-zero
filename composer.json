@@ -1,17 +1,17 @@
 {
-    "name": "laravel-zero/laravel-zero",
-    "description": "Laravel Zero provides the perfect starting point for your next Laravel Console Application.",
+    "name": "oxboot/ox",
+    "description": "Ox - Command-line server control panel & deployment tool written in PHP",
     "keywords": ["framework", "laravel", "console", "zero"],
-    "homepage": "http://laravel-zero.com",
+    "homepage": "http://oxboot.com",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/laravel-zero/laravel-zero/issues",
-        "source": "https://github.com/laravel-zero/laravel-zero"
+        "issues": "https://github.com/oxboot/ox/issues",
+        "source": "https://github.com/oxboot/ox"
     },
     "authors": [
         {
-            "name": "Nuno Maduro",
-            "email": "enunomaduro@gmail.com"
+            "name": "Zorca",
+            "email": "vs@zorca.org"
         }
     ],
     "require": {
