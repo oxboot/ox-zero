@@ -7,7 +7,7 @@ return [
     /*
      * Here goes the application name.
      */
-    'name' => 'Laravel Zero',
+    'name' => 'Ox',
 
     /*
      * Here goes the application version.
@@ -38,6 +38,6 @@ return [
      * Enjoy all the power of Laravel on your console.
      */
     'providers' => [
-        App\Providers\AppServiceProvider::class,
+        Ox\Providers\AppServiceProvider::class,
     ],
 ];

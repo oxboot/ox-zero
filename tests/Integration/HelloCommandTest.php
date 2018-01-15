@@ -3,7 +3,7 @@
 namespace Tests\Unit;
 
 use Tests\TestCase;
-use App\Commands\HelloCommand;
+use Ox\Commands\HelloCommand;
 
 class HelloCommandTest extends TestCase
 {
