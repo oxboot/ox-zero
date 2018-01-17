@@ -1,3 +1,4 @@
+.vagrant/
 /vendor/
 .idea/*
 
@@ -8,3 +9,5 @@
 /builds/
 /database/database.sqlite
 .env
+
+*.log

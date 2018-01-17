@@ -1,47 +1,45 @@
 {
-    "name": "oxboot/ox",
-    "description": "Ox - Command-line server control panel & deployment tool written in PHP",
-    "keywords": ["framework", "laravel", "console", "zero"],
-    "homepage": "http://oxboot.com",
-    "license": "MIT",
-    "support": {
-        "issues": "https://github.com/oxboot/ox/issues",
-        "source": "https://github.com/oxboot/ox"
-    },
-    "authors": [
-        {
-            "name": "Zorca",
-            "email": "vs@zorca.org"
-        }
-    ],
-    "require": {
-        "php": ">=7.1",
-        "laravel-zero/framework": "4.0.*"
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "require-dev": {
-        "phpunit/phpunit": "~6.4",
-        "symfony/thanks": "^1.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Ox\\": "app/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
-        }
-    },
-    "config": {
-        "preferred-install": "dist",
-        "sort-packages": true
-    },
-    "scripts": {
-        "post-create-project-cmd": [
-            "php application app:rename"
-        ]
-    },
-    "bin": ["ox"]
+  "name": "oxboot/ox",
+  "description": "Ox - Command-line server control panel & deployment tool written in PHP",
+  "keywords": ["framework", "laravel", "console", "zero"],
+  "homepage": "http://oxboot.com",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/oxboot/ox/issues",
+    "source": "https://github.com/oxboot/ox"
+  },
+  "authors": [
+    {
+      "name": "Zorca",
+      "email": "vs@zorca.org"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "laravel-zero/framework": "4.0.*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require-dev": {
+    "phpunit/phpunit": "~6.4",
+    "symfony/thanks": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ox\\": "app/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "files": [
+    "app/helpers.php"
+  ],
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "bin": ["ox"]
 }
