@@ -1,6 +1,10 @@
-<?php
+<?php namespace Ox\Commands;
 
-namespace Ox\Commands;
+/**
+ * @package     ox
+ * @copyright   Copyright (C) 2018 Zorca. All rights reserved.
+ * @license     See LICENSE file for details.
+ */
 
 use Illuminate\Console\Scheduling\Schedule;
 use LaravelZero\Framework\Commands\Command;

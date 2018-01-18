@@ -16,7 +16,8 @@
   ],
   "require": {
     "php": ">=7.1",
-    "laravel-zero/framework": "4.0.*"
+    "laravel-zero/framework": "4.0.*",
+    "symfony/filesystem": "^4.0"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
@@ -27,16 +28,16 @@
   "autoload": {
     "psr-4": {
       "Ox\\": "app/"
-    }
+    },
+    "files": [
+      "app/helpers.php"
+    ]
   },
   "autoload-dev": {
     "psr-4": {
       "Tests\\": "tests/"
     }
   },
-  "files": [
-    "app/helpers.php"
-  ],
   "config": {
     "preferred-install": "dist",
     "sort-packages": true

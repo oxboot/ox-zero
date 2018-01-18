@@ -1,6 +1,10 @@
-<?php
+<?php namespace Ox\Commands;
 
-namespace Ox\Commands;
+/**
+ * @package     ox
+ * @copyright   Copyright (C) 2018 Zorca. All rights reserved.
+ * @license     See LICENSE file for details.
+ */
 
 use Illuminate\Console\Scheduling\Schedule;
 use LaravelZero\Framework\Commands\Command;
@@ -12,7 +16,7 @@ class SiteCreateCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'site:create {domain}';
+    protected $signature = 'site:create {site_name}';
 
     /**
      * The console command description.
@@ -38,7 +42,12 @@ class SiteCreateCommand extends Command
      */
     public function handle(): void
     {
-        $this->notify('Domain = '.$this->argument('domain'), 'Enjoy the fresh air!');
+        if (! ox_check_domain($this->argument('site_name'))) {
+            $this->error('Site name not valid');
+            return;
+        }
+        ox_mkdir(config('filesystems.disks.www.root').$this->argument('site_name'));
+        ox_chown(config('filesystems.disks.www.root').$this->argument('site_name'), 'www-data', 'www-data');
     }
 
     /**
