@@ -33,6 +33,8 @@ return [
      */
     'with-scheduler' => true,
 
+    'public-folder' => 'htdocs',
+
     /*
      * Here goes the application list of Laravel Service Providers.
      * Enjoy all the power of Laravel on your console.

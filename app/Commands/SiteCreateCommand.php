@@ -43,11 +43,11 @@ class SiteCreateCommand extends Command
     public function handle(): void
     {
         if (! ox_check_domain($this->argument('site_name'))) {
-            $this->error('Site name not valid');
+            $this->error('Error: Site name not valid');
             return;
         }
-        ox_mkdir(config('filesystems.disks.www.root').$this->argument('site_name'));
-        ox_chown(config('filesystems.disks.www.root').$this->argument('site_name'), 'www-data', 'www-data');
+        ox_mkdir(config('filesystems.disks.www.root').$this->argument('site_name').'/'.config('app.public-folder'));
+        ox_chown(config('filesystems.disks.www.root').$this->argument('site_name').'/'.config('app.public-folder'), 'www-data', 'www-data');
     }
 
     /**
